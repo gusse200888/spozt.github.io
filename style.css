@@ -1,0 +1,19 @@
+h1 {
+	text-align: center;
+	font-size: 12pt;
+	color: #ffffff;
+}
+p {
+	text-align: center;
+	font-size: 12pt;
+	color: #ffffff;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	color: #212121;
+}
+button {
+	text-align: center;
+}

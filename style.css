@@ -1,9 +1,12 @@
+@font-face { font-family: SegoePro; src: url('segoepro.ttf'); }
 h1 {
+	font-family: SegoePro;
 	text-align: center;
 	font-size: 12pt;
 	color: #ffffff;
 }
 p {
+	font-family: SegoePro;
 	text-align: center;
 	font-size: 12pt;
 	color: #ffffff;
@@ -15,5 +18,6 @@ body {
 	color: #212121;
 }
 button {
+	font-family: SegoePro;
 	text-align: center;
 }

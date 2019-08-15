@@ -33,8 +33,10 @@ header
 }
 h1
 {
-	color: #fff;
-	height: 40px;
+	position: relative;
+	color: #212121;
+	right: -200px;
+	top: 30px;
 	line-height: 60px;
 	padding: 0 20px;
 	text-align: center;
@@ -45,9 +47,11 @@ h1
 }
 p
 {
-	color: #fff;
-	height: 33px;
-	line-height: 60px;
+	position: relative;
+	color: #212121;
+	right: 230px;
+	top: 20px;
+	line-height: 30px;
 	padding: 0 20px;
 	text-align: center;
 	box-sizing: border-box;

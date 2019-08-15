@@ -99,6 +99,9 @@ nav ul li a:hover
 		margin: 20px;
 	}
 }
+html {
+  scroll-behavior: smooth;
+}
 @media (max-width: 768px)
 {
 	menu-toggle

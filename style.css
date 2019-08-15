@@ -31,11 +31,17 @@ header
 	font-weight: 700;
 	text-decoration; none;
 }
+h1
+{
+	color: #fff;
+	text-align: center;
+	float: left;
+}
 p
 {
 	color: #fff;
 	text-align: center;
-	font size: 10px;
+	float: left;
 }
 nav
 {

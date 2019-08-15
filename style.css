@@ -34,14 +34,26 @@ header
 h1
 {
 	color: #fff;
+	height: 40px;
+	line-height: 60px;
+	padding: 0 20px;
 	text-align: center;
+	box-sizing: border-box;
 	float: left;
+	font-weight: 700;
+	text-decoration; none;
 }
 p
 {
 	color: #fff;
+	height: 33px;
+	line-height: 60px;
+	padding: 0 20px;
 	text-align: center;
+	box-sizing: border-box;
 	float: left;
+	font-weight: 700;
+	text-decoration; none;
 }
 nav
 {

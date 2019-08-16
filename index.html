@@ -4,12 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
 <title>spozt</title
 </head>
 <body onload="detectmob()">
@@ -18,17 +12,17 @@
 <div class="menu-toggle"></div>
 <nav>
 <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#socials">Socials/Contact</a></li>
+<li><a id="home1" href="#home">Home</a></li>
+<li><a id="about1" href="#about">About</a></li>
+<li><a id="socials1" href="#socials">Socials/Contact</a></li>
 </nav>
 <div class="main" id="home">
-<h1>Welcome, to my website.</h1>
+<h1 id="welcome">Welcome to my website.</h1>
 </div>
 <div class="main" id="about">
-<h1 style="right: -450px; line-height: -100;"><font size="800">About me</font></h1>
+<h1 id="aboutme" style="right: -450px; line-height: -100;"><font size="800">About me</font></h1>
 <p></p>
-<div style="right: 95px; position: relative; color: #212121; top: 250px; font-size: 37px;">
+<div id="aboutme2" style="right: 95px; position: relative; color: #212121; top: 250px; font-size: 37px;">
 I'm a Danish Programmer, Gamer, Graphic Designer and Editor!
 
 I mostly play games and do coding in my freetime. I usually have school and I think thats kinda sad :(.
@@ -45,12 +39,27 @@ Also for my other stuff.
 <li><a href="https://spozt.tk/twitter">Twitter</a></li>
 <li><a href="javascript:alert('! spozt#1935')">Discord</a></li>
 </ul>
+<p style="right: -285px; top: 1075px;"><font size="70">Copyright (C) 2019 spozt</font></p>
 </div>
 <p></p>
 </div>
 <div class="clearfix"></div>
 </header>
 <script>
+	var aboutmee2 = 'Jeg er en Dansk programmoer, Gamer, Grafik Designer og Redigerer! ' +
+               '' +
+               'Jeg spiller mest spil og koder i min fritid. Jeg gaar normalt til skole og jeg synes det er lidt sad :(.' +
+               'Grafik Designing og Redigering er rigtig brugbart.' +
+               'Til skole ting osv.'
+	var language = window.navigator.userLanguage || window.navigator.language;
+	if (language == 'da-DK') {
+		document.getElementById("aboutme2").innerHTML = aboutmee2;
+		document.getElementById("aboutme").innerHTML = "Om mig";
+		document.getElementById("welcome").innerHTML = "Velkommen til min hjemmeside.";
+		document.getElementById("home1").innerHTML = "Hjem";
+		document.getElementById("about1").innerHTML = "Om mig";
+		document.getElementById("socials1").innerHTML = "Sociale medier/Kontakt mig";
+	}
 	function detectmob() { 
  		 if( navigator.userAgent.match(/Android/i)
 		 || navigator.userAgent.match(/webOS/i)
@@ -63,12 +72,6 @@ Also for my other stuff.
 		alert("The device you are using is not supported on this site. Please use a computer to display our website best.")
   	}
 }
-	$(document).ready(function() {
-		$('.menu-toggle').click(function(){
-			$('.menu-toggle').toggleClass('active')
-			$('nav').toggleClass('active')
-		});
-	});
 </script>
 </body>
 </html>

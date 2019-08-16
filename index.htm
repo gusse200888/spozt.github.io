@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <title>spozt</title
@@ -16,7 +16,32 @@
 <li><a href="#about">About</a></li>
 <li><a href="#socials">Socials/Contact</a></li>
 </nav>
-<h1>I'm a Danish Programmer and Gamer!</h1>
+<div class="main" id="home">
+<h1>Welcome, to my website.</h1>
+</div>
+<div class="main" id="about">
+<h1 style="right: -450px; line-height: -100;"><font size="800">About me</font></h1>
+<p></p>
+<div style="right: 95px; position: relative; color: #212121; top: 250px; font-size: 37px;">
+I'm a Danish Programmer, Gamer, Graphic Designer and Editor!
+
+I mostly play games and do coding in my freetime. I usually have school and i think thats kinda sad :(.
+Graphic Designing and Editing is really useful for mostly school stuff.
+Also for my other stuff.
+</div>
+</div>
+<div class="main" id="socials">
+<ul>
+<li><a href="https://spozt.tk/youtube">YouTube</a></li>
+<li><a href="https://spozt.tk/github">Github</a></li>
+<li><a href="https://spozt.tk/steam">Steam</a></li>
+<li><a href="https://spozt.tk/twitch">Twitch</a></li>
+<li><a href="https://spozt.tk/twitter">Twitter</a></li>
+<li><a href="javascript:discord()">Discord</a></li>
+</ul>
+</div>
+<p></p>
+</div>
 <div class="clearfix"></div>
 </header>
 <script
@@ -24,12 +49,15 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
-	$function(){
+	$(document).ready(function() {
 		$('.menu-toggle').click(function(){
 			$('.menu-toggle').toggleClass('active')
 			$('nav').toggleClass('active')
-		})
-	})
+		});
+	});
+function discord() {
+	alert('! spozt#1935');
+}
 </script>
 </body>
 </html>

@@ -31,18 +31,19 @@ header
 	font-weight: 700;
 	text-decoration; none;
 }
-h1
+h1, h6
 {
 	position: relative;
 	color: #212121;
-	right: -115px;
-	top: 30px;
+	right: -40px;
+	top: 70px;
 	line-height: 60px;
 	padding: 0 20px;
 	text-align: center;
 	box-sizing: border-box;
 	float: left;
 	font-weight: 700;
+	font-size: 90px;
 	text-decoration; none;
 }
 p
@@ -51,13 +52,25 @@ p
 	color: #212121;
 	right: 230px;
 	top: 20px;
-	line-height: 30px;
 	padding: 0 20px;
 	text-align: center;
 	box-sizing: border-box;
 	float: left;
 	font-weight: 700;
 	text-decoration; none;
+	font-size: 100px;
+}
+#about
+{
+	height: 1200px;
+}
+#home
+{
+	height: 1000px;
+}
+#socials
+{
+	height: 1200px;
 }
 nav
 {
@@ -66,6 +79,35 @@ nav
 .clearfix
 {
 	clear: both;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+ul li
+{
+	top: 400px;
+	list-style: none;
+	margin: 0;
+	padding-top: 40px;
+	right: 10px;
+}
+ul li a
+{
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #262626;
+}
+ul li a.active,
+ul li a:hover
+{
+	background: #F0706A;
+	color: #fff;
+	transition: 0.5s;
 }
 nav ul
 {

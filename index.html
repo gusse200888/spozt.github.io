@@ -51,21 +51,21 @@ Also for my other stuff.
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
+	function MobileFunction() {
+		if( navigator.userAgent.match(/Android/i)
+ 		|| navigator.userAgent.match(/webOS/i)
+ 		|| navigator.userAgent.match(/iPhone/i)
+ 		|| navigator.userAgent.match(/iPad/i)
+ 		|| navigator.userAgent.match(/iPod/i)
+ 		|| navigator.userAgent.match(/BlackBerry/i)
+ 		|| navigator.userAgent.match(/Windows Phone/i)
+		alert("You are using a Mobile device. Please be aware that my website does not support Mobile!")
+	}
 	$(document).ready(function() {
 		$('.menu-toggle').click(function(){
 			$('.menu-toggle').toggleClass('active')
 			$('nav').toggleClass('active')
 		});
-		function MobileFunction() {
-			if( navigator.userAgent.match(/Android/i)
- 			|| navigator.userAgent.match(/webOS/i)
- 			|| navigator.userAgent.match(/iPhone/i)
- 			|| navigator.userAgent.match(/iPad/i)
- 			|| navigator.userAgent.match(/iPod/i)
- 			|| navigator.userAgent.match(/BlackBerry/i)
- 			|| navigator.userAgent.match(/Windows Phone/i)
-			alert("You are using a Mobile device. Please be aware that my website does not support Mobile!")
-		}
 	});
 </script>
 </body>

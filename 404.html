@@ -12,9 +12,9 @@
 <div class="menu-toggle"></div>
 <nav>
 <ul>
-<li><a href="https://spozt.tk#home">Home</a></li>
-<li><a href="https://spozt.tk#about">About</a></li>
-<li><a href="https://spozt.tk#socials">Socials/Contact</a></li>
+<li><a id="home1" href="https://spozt.tk#home">Home</a></li>
+<li><a id="about1" href="https://spozt.tk#about">About</a></li>
+<li><a id="socials1" href="https://spozt.tk#socials">Socials/Contact</a></li>
 </nav>
 <h1 id="error1">ERROR!</h1>
 <p></p>
@@ -33,6 +33,9 @@
                'Til skole ting osv.'
 	var language = window.navigator.userLanguage || window.navigator.language;
 	if (language == 'da-DK') {
+		document.getElementById("home1").innerHTML = "Hjem";
+		document.getElementById("about1").innerHTML = "Om mig";
+		document.getElementById("socials1").innerHTML = "Sociale medier/Kontakt mig";
 		document.getElementById("error1").innerHTML = "FEJL!";
 		document.getElementById("wearesorry").innerHTML = "Vi beklager, men vi kunne ikke finde det du ledte efter.";
 	}

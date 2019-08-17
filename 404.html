@@ -16,9 +16,9 @@
 <li><a href="https://spozt.tk#about">About</a></li>
 <li><a href="https://spozt.tk#socials">Socials/Contact</a></li>
 </nav>
-<h1>ERROR</h1>
+<h1 id="error1">ERROR!</h1>
 <p></p>
-<p>We are sorry, but we could not find what you were looking for.</p>
+<p id="wearesorry">We are sorry, but we could not find what you were looking for.</p>
 <div class="clearfix"></div>
 </header>
 <script
@@ -26,20 +26,28 @@
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script>
-	$function(){
-		$('.menu-toggle').click(function(){
-			$('.menu-toggle').toggleClass('active')
-			$('nav').toggleClass('active')
-		if( navigator.userAgent.match(/Android/i)
- 		|| navigator.userAgent.match(/webOS/i)
- 		|| navigator.userAgent.match(/iPhone/i)
- 		|| navigator.userAgent.match(/iPad/i)
- 		|| navigator.userAgent.match(/iPod/i)
- 		|| navigator.userAgent.match(/BlackBerry/i)
- 		|| navigator.userAgent.match(/Windows Phone/i)
-		alert("You are using a Mobile device. Please be aware that my website does not support Mobile!")
-		})
-	})
+	var aboutmee2 = 'Jeg er en Dansk programmoer, Gamer, Grafik Designer og Redigerer! ' +
+               '' +
+               'Jeg spiller mest spil og koder i min fritid. Jeg gaar normalt til skole og jeg synes det er lidt sad :(.' +
+               'Grafik Designing og Redigering er rigtig brugbart.' +
+               'Til skole ting osv.'
+	var language = window.navigator.userLanguage || window.navigator.language;
+	if (language == 'da-DK') {
+		document.getElementById("error1").innerHTML = "FEJL!";
+		document.getElementById("wearesorry").innerHTML = "Vi beklager, men vi kunne ikke finde det du ledte efter.";
+	}
+	function detectmob() { 
+ 		 if( navigator.userAgent.match(/Android/i)
+		 || navigator.userAgent.match(/webOS/i)
+		 || navigator.userAgent.match(/iPhone/i)
+		 || navigator.userAgent.match(/iPad/i)
+		 || navigator.userAgent.match(/iPod/i)
+		 || navigator.userAgent.match(/BlackBerry/i)
+		 || navigator.userAgent.match(/Windows Phone/i)
+ 	){
+		alert("The device you are using is not supported on this site. Please use a computer to display our website best.")
+  	}
+}
 </script>
 </body>
 </html>

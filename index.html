@@ -39,6 +39,11 @@
 <div class="clearfix"></div>
 </header>
 <script>
+	document.body.addEventListener('keydown', event => {
+  		if (event.ctrlKey && 'cvxspwuaz'.indexOf(event.key) !== -1) {
+   			event.preventDefault()
+ 		}
+	})
 	document.addEventListener('contextmenu', event => event.preventDefault());
 	var aboutmee2 = 'Jeg er en Dansk programmoer, Gamer, Grafik Designer og Redigerer! ' +
                '' +

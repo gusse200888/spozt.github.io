@@ -4,7 +4,7 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <title>spozt</title>
 </head>
-<body onload="detectmob()">
+<body onload="detectmob()" oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
 <header>
 <a href="#home" class="spozt">spozt</a>
 <div class="menu-toggle"></div>
@@ -39,12 +39,6 @@
 <div class="clearfix"></div>
 </header>
 <script>
-	document.body.addEventListener('keydown', event => {
-  		if (event.ctrlKey && event.shiftKey && 'i'.indexOf(event.key) !== -1) {
-   			event.preventDefault()
- 		}
-	})
-	document.addEventListener('contextmenu', event => event.preventDefault());
 	var aboutmee2 = 'Jeg er en Dansk programmoer, Gamer, Grafik Designer og Redigerer! ' +
                '' +
                'Jeg spiller mest spil og koder i min fritid. Jeg gaar normalt til skole og jeg synes det er lidt sad :(.' +

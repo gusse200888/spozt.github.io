@@ -40,7 +40,7 @@
 </header>
 <script>
 	document.body.addEventListener('keydown', event => {
-  		if (event.ctrlKey && 'cvxspwuaz'.indexOf(event.key) !== -1) {
+  		if (event.ctrlKey && event.shiftKey && 'i'.indexOf(event.key) !== -1) {
    			event.preventDefault()
  		}
 	})

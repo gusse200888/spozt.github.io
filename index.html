@@ -45,7 +45,7 @@
             <div class="scroll-down"></div>
             <div class="container-fluid">
                   <br><br><br>
-                  <h6>My projects</h6>
+                  <h6 id="project">My projects</h6>
                   <div class="vertical"></div>
                   <br>
                   <div class="whitespace"></div>
@@ -146,6 +146,7 @@
       var userLang = navigator.language || navigator.userLanguage;
       if (userLang == "da-DK") {
 	document.title = "Hjem | spozt";
+	document.getElementById("project").innerHTML = "Mine projekter";
 	document.getElementById("home1").innerHTML = "Hjem";
 	document.getElementById("about1").innerHTML = "Om mig";
 	document.getElementById("social1").innerHTML = "Medie";
@@ -157,6 +158,7 @@
       }
       if (userLang == "da") {
 	document.title = "Hjem | spozt";
+	document.getElementById("project").innerHTML = "Mine projekter";
 	document.getElementById("home1").innerHTML = "Hjem";
 	document.getElementById("about1").innerHTML = "Om mig";
 	document.getElementById("social1").innerHTML = "Medie";
@@ -168,6 +170,7 @@
       }
       if (userLang == "dk") {
 	document.title = "Hjem | spozt";
+	document.getElementById("project").innerHTML = "Mine projekter";
 	document.getElementById("home1").innerHTML = "Hjem";
 	document.getElementById("about1").innerHTML = "Om mig";
 	document.getElementById("social1").innerHTML = "Medie";

@@ -14,16 +14,16 @@
       <link rel="stylesheet" href="css/animate.css">
       <script src="js/wow.min.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
       <div class="wrapper">
             <nav>
                   <span id="brand">
                         <a href="index.html">spozt</a>
                   </span>
                   <ul id="menu">
-                        <li><a href="index.html">Home<span></span></a></li>
-                        <li><a href="about.html">About me<span></span></a></li>
-                        <li><a href="index.html#media">Media<span></span></a></li>
+                        <li><a id="home1" href="index.html">Home<span></span></a></li>
+                        <li><a id="about1" href="about.html">About me<span></span></a></li>
+                        <li><a id="social1" href="index.html#media">Media<span></span></a></li>
                   </ul>
                   <div id="toggle">
                         <div class="span">menu</div>
@@ -32,14 +32,14 @@
             <div id="resize">
                   <div class="close-btn">close</div>
                   <ul id="menu">
-                        <li><a href="index.html">Home<span></span></a></li>
-                        <li><a href="about.html">About me<span></span></a></li>
-                        <li><a href="index.html#media">Media<span></span></a></li>
+                        <li><a id="home2" href="index.html">Home<span></span></a></li>
+                        <li><a id="about2" href="about.html">About me<span></span></a></li>
+                        <li><a id="social2" href="index.html#media">Media<span></span></a></li>
                   </ul>
             </div>
             <div class="hero">
                   <div class="header">
-                        <h1 class="line anim-typewriter">Video games. HELL YEAH</h1>
+                        <h1 id="video1" class="line anim-typewriter">Video games. HELL YEAH</h1>
                   </div>
             </div>
             <div class="scroll-down"></div>
@@ -95,7 +95,7 @@
                                           <br><br>
                                     </div>
                                     <div class="col-lg-4" id="media">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">Follow me</p>
+                                          <p id="follow" class="wow fadeInUp" data-wow-delay="0s">Follow me</p>
                                           <ul>
                                                 <li id="ttv" class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://spozt.tk/twitch">ttv</a></li>
                                                 <li id="steam" class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://spozt.tk/steam">steam</a></li>
@@ -116,7 +116,6 @@
             <br><br><br><br>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script type="text/javascript">
       $("#toggle").click(function() {
             $(this).toggleClass('on');
@@ -144,21 +143,37 @@
             ease: Expo.easeInOut
       }, 0.1);
       new WOW().init();
-      $('#yt').click(function(){
-            window.location.href = 'https://spozt.tk/youtube';
-      });
-      $('#tw').click(function(){
-            window.location.href = 'https://spozt.tk/youtube';
-      });
-      $('#yt').click(function(){
-            window.location.href = 'https://spozt.tk/youtube';
-      });
-      $('#yt').click(function(){
-            window.location.href = 'https://spozt.tk/youtube';
-      });
-      $('#yt').click(function(){
-            window.location.href = 'https://spozt.tk/youtube';
-      });
+      var userLang = navigator.language || navigator.userLanguage;
+      if (userLang == "da-DK") {
+	document.getElementById("home1").innerHTML = "Hjem";
+	document.getElementById("about1").innerHTML = "Om mig";
+	document.getElementById("social1").innerHTML = "Medie";
+	document.getElementById("home2").innerHTML = "Hjem";
+	document.getElementById("about2").innerHTML = "Om mig";
+	document.getElementById("social2").innerHTML = "Medie";
+	document.getElementById("video1").innerHTML = "Video spil. JA";
+      document.getElementById("follow").innerHTML = "Følg mig";
+      }
+      if (userLang == "da") {
+	document.getElementById("home1").innerHTML = "Hjem";
+	document.getElementById("about1").innerHTML = "Om mig";
+	document.getElementById("social1").innerHTML = "Medie";
+	document.getElementById("home2").innerHTML = "Hjem";
+	document.getElementById("about2").innerHTML = "Om mig";
+	document.getElementById("social2").innerHTML = "Medie";
+	document.getElementById("video1").innerHTML = "Video spil. JA";
+      document.getElementById("follow").innerHTML = "Følg mig";
+      }
+      if (userLang == "dk") {
+	document.getElementById("home1").innerHTML = "Hjem";
+	document.getElementById("about1").innerHTML = "Om mig";
+	document.getElementById("social1").innerHTML = "Medie";
+	document.getElementById("home2").innerHTML = "Hjem";
+	document.getElementById("about2").innerHTML = "Om mig";
+	document.getElementById("social2").innerHTML = "Medie";
+	document.getElementById("video1").innerHTML = "Video spil. JA";
+      document.getElementById("follow").innerHTML = "Følg mig";
+      }
       </script>
 </body>
 </html>

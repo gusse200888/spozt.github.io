@@ -26,11 +26,11 @@
                         <li><a id="social1" href="index.html#media">Media<span></span></a></li>
                   </ul>
                   <div id="toggle">
-                        <div class="span">menu</div>
+                        <div class="span">Menu</div>
                   </div>
             </nav>
             <div id="resize">
-                  <div class="close-btn">close</div>
+                  <div id="luk" class="close-btn">Close</div>
                   <ul id="menu">
                         <li><a id="home2" href="index.html">Home<span></span></a></li>
                         <li><a id="about2" href="about.html">About me<span></span></a></li>
@@ -146,6 +146,7 @@
       var userLang = navigator.language || navigator.userLanguage;
       if (userLang == "da-DK") {
 	document.title = "Hjem | spozt";
+	document.getElementById("luk").innerHTML = "Luk";
 	document.getElementById("project").innerHTML = "Mine projekter";
 	document.getElementById("home1").innerHTML = "Hjem";
 	document.getElementById("about1").innerHTML = "Om mig";

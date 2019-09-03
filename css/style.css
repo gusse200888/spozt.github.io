@@ -27,12 +27,10 @@ html, body {
       overflow: hidden;
       transform: translateY(-50%);
 }
-
 .anim-typewriter {
       animation: typewriter 4s steps(40) 1s 1 normal both,
       blinkTextCussor 500ms steps(40) infinite normal;
 }
-
 @keyframes typewriter {
       from {
             width: 0;
@@ -41,7 +39,6 @@ html, body {
             width: 13em;
       }
 }
-
 @media(max-width: 768px) {
       @keyframes typewriter {
             from {
@@ -52,7 +49,6 @@ html, body {
             }
       }
 }
-
 @keyframes blinkTextCussor {
       from {
             border-right-color: rgba(255, 255, 255, 0.75);
@@ -61,8 +57,6 @@ html, body {
             border-right-color: transparent;
       }
 }
-
-/*--------------- navigation --------------- */
 nav {
       width: 100%;
       background: #0f0f0f;
@@ -70,7 +64,6 @@ nav {
       position: fixed;
       z-index: 1;
 }
-
 nav #brand {
       float: left;
       display: block;
@@ -78,22 +71,18 @@ nav #brand {
       line-height: 80px;
       font-weight: bold;
 }
-
 nav #brand a {
       color: #fff;
       transition: all 0.3s ease-out;
 }
-
 nav #brand a:hover {
       text-decoration: none;
 }
-
 nav #menu {
       float: left;
       right: 80px;
       position: fixed;
 }
-
 nav #menu li {
       padding-left: 40px;
       display: inline-block;
@@ -103,19 +92,15 @@ nav #menu li {
       position: relative;
       transition: all 0.3s ease-out;
 }
-
 nav #menu li span {
       font-weight: 700;
 }
-
 nav #menu li a {
       color: #fff;
 }
-
 nav #menu li a:hover {
       text-decoration: none;
 }
-
 #toggle {
       position: absolute;
       right: 30px;
@@ -130,7 +115,6 @@ nav #menu li a:hover {
       visibility: hidden;
       opacity: 0;
 }
-
 .close-btn {
       position: absolute;
       right: 16px;
@@ -140,7 +124,6 @@ nav #menu li a:hover {
       top: -2px;
       line-height: 80px;
 }
-
 #resize {
       z-index: 1;
       top: 0px;
@@ -152,7 +135,6 @@ nav #menu li a:hover {
       opacity: 0;
       transition: all 1s ease-out;
 }
-
 #resize #menu {
       height: 90px;
       position: absolute;
@@ -162,7 +144,6 @@ nav #menu li a:hover {
       display: table-cell;
       vertical-align: center;
 }
-
 #resize #menu li {
       display: block;
       text-align: center;
@@ -173,24 +154,19 @@ nav #menu li a:hover {
       cursor: pointer;
       transition: all 0.3s ease-out;
 }
-
 #resize li:nth-child(1) {
       margin-top: 140px;
 }
-
 #resize #menu li a {
       color: #fff;
 }
-
 #resize #menu li a:hover {
       text-decoration: none;
 }
-
 #resize.active {
       visibility: visible;
       opacity: 1;
 }
-
 @media(max-width: 768px) {
       #toggle {
             visibility: visible;
@@ -198,25 +174,20 @@ nav #menu li a:hover {
             margin-top: 6px;
             margin-right: 4px;
       }
-
       nav #brand {
             margin-left: 24px;
       }
-
       #menu a {
             font-size: 20px;
             font-weight: 300;
       }
-
       #resize li span {
             font-weight: bolder;
       }
-
       nav #menu {
             display: none;
       }
 }
-
 @media(min-width: 768px) {
       #resize {
             visibility: hidden !important;
@@ -225,28 +196,23 @@ nav #menu li a:hover {
 html {
       scroll-behavior: smooth;
 }
-/*--------------- hero section --------------- */
 .hero {
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
 }
-
 .hero h1 {
       font-weight: lighter;
       text-align: center;
       letter-spacing: -2px;
       line-height: 58px;
 }
-
 @media(max-width: 768px) {
       .header h1 {
             font-size: 26px;
       }
 }
-
-/*--------------- scroll down icon animation --------------- */
 .scroll-down {
       position: absolute;
       left: 50%;
@@ -278,8 +244,6 @@ html {
             opacity: 0;
       }
 }
-
-/*--------------- projects section --------------- */
 h6 {
       text-align: center;
 }
@@ -481,9 +445,6 @@ h6 {
             padding: 0;
       }
 }
-
-/*--------------- work page --------------- */
-
 .hero-content {
       margin-left: 0%;
 }
@@ -505,9 +466,6 @@ h6 {
             margin: 0 auto;
       }
 }
-
-/*---------------about page --------------- */
-
 .about {
       height: 500px;
       margin-top: 120px;
@@ -516,9 +474,6 @@ h6 {
 .image {
       background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
 }
-
-/*--------------- contact form --------------- */
-
 #contact-form {
       margin: 5% 1.4%;
 }
@@ -577,7 +532,6 @@ textarea:focus {
       font-size: 14px;
       letter-spacing: 2px;
 }
-
 .send:hover {
       background: #dfdfdf;
       color: #101010;
@@ -589,17 +543,12 @@ textarea:focus {
             width: 98%;
       }
 }
-
-/*--------------- project page --------------- */
-
 .prev, .next p {
       color: grey;
 }
-
 .prev p {
       text-align: left;
 }
-
 .next p {
       text-align: right;
 }
